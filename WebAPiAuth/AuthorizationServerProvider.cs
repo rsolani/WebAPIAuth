@@ -24,6 +24,7 @@ namespace WebAPiAuth
                 var user = context.UserName;
                 var password = context.Password;
 
+                //For demo purposes only. Here, we go to our database and get the user data
                 if (user != "robertson" || password != "robertson")
                 {
                     context.SetError("invalid_grant", "Invalid User or Password");
